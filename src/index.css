@@ -22,5 +22,5 @@ p {
 }
 
 button {
-  @apply px-4 py-2 m-4 border border-highlight rounded-lg text-highlight text-2xl;
+  @apply px-4 py-2 m-4 border rounded-lg text-2xl;
 }

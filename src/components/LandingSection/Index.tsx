@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <>
       <h1 className="text-primary">COMPONENTS</h1>
-      <hr className="border border-primary w-full" />
+      <hr className="border border-primary w-2/5" />
       <p className="mt-8 text-dark">
         Reuseable React components styled with{" "}
         <a

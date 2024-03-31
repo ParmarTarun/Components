@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { components } from "./components/Index";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const App = () => {
   const [componentIndex, setComponentIndex] = useState(0);
@@ -10,7 +11,10 @@ const App = () => {
       <div className="components-action">
         {componentIndex === 0 && componentIndex < components.length - 1 ? (
           <div className="get-started">
-            <button onClick={() => setComponentIndex(1)}>Get Started</button>
+            <button onClick={() => setComponentIndex(1)}>
+              Checkout
+              <FaArrowCircleRight className="inline ml-2" />
+            </button>
           </div>
         ) : (
           <div className="components-navigation">
