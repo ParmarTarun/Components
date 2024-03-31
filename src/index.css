@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  @apply px-4 py-2 m-4 border border-highlight rounded-lg text-highlight text-2xl;
+}
