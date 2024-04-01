@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import Step1 from "./Steps/Step1";
 import Step2 from "./Steps/Step2";
