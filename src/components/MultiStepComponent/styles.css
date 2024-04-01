@@ -1,0 +1,84 @@
+/* 
+already applied configuration 
+
+dark: "#000000",
+light: "#ffffff",
+primary: "#2779a7",
+secondary: "#ECD06F",
+highlight: "#FF9398",
+
+h1 {
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+} 
+
+button {
+  @apply px-4 py-2 m-4 border rounded-lg text-2xl;
+}
+
+
+*/
+
+.multi-step-component {
+  @apply m-auto h-4/5 w-3/5 my-4 px-2 text-primary shadow-lg rounded-2xl py-2 bg-secondary;
+}
+
+.wrapper {
+  @apply h-full flex flex-col justify-center items-center;
+}
+
+.steps {
+  @apply flex-1 flex flex-col justify-center w-full m-auto text-center;
+}
+
+.steps-action {
+  @apply w-full flex justify-between;
+}
+
+.steps-action button {
+  @apply border-highlight bg-primary text-light  hover:bg-highlight;
+}
+
+.form-control {
+  @apply w-full text-center;
+}
+
+label {
+  @apply text-xl;
+}
+
+input {
+  @apply bg-transparent w-1/2 border-b border-b-primary m-4 font-bold p-2;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="range"] {
+  @apply appearance-none;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  @apply h-1 rounded-lg bg-primary cursor-pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply bg-highlight w-5 h-5 cursor-pointer appearance-none rounded-full -mt-2;
+}
