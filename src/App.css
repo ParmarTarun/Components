@@ -13,3 +13,13 @@
 .components-action button {
   @apply bg-transparent text-primary border-primary hover:bg-primary hover:text-light;
 }
+
+.components-navigation {
+  @apply flex w-full justify-between items-center;
+}
+.components-navigation .progress {
+  @apply flex-1  flex justify-around;
+}
+.components-navigation .progress svg {
+  @apply fill-primary text-2xl;
+}

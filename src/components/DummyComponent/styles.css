@@ -1,0 +1,37 @@
+/* 
+already applied configuration from tailwind.config.ts
+
+dark: "#000000",
+light: "#ffffff",
+primary: "#2779a7",
+secondary: "#ECD06F",
+highlight: "#FF9398",
+background: "#D3D0D0",
+
+h1 {
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+} 
+
+button {
+  @apply px-4 py-2 m-4 border rounded-lg text-2xl;
+}
+
+
+*/
+
+/* Add you css here */
