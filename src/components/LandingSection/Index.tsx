@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
 
 const Landing = () => {
@@ -18,10 +17,17 @@ const Landing = () => {
         </a>
       </p>
       <div className="flex justify-center ">
-        <button className="bg-highlight text-light font-semibold border border-hightlight hover:bg-primary shadow-lg">
-          <FaGithub className="inline mr-2" />
-          Git Repo
-        </button>
+        <a
+          href="https://github.com/ParmarTarun/Components"
+          target="_blank"
+          rel="noreferrer"
+          className=""
+        >
+          <button className="bg-highlight text-light font-semibold border border-hightlight hover:bg-primary shadow-lg">
+            <FaGithub className="inline mr-2" />
+            Git Repo
+          </button>
+        </a>
       </div>
     </>
   );
