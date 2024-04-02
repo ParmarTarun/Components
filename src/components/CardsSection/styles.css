@@ -1,0 +1,159 @@
+/* 
+already applied configuration from tailwind.config.ts
+
+dark: "#000000",
+light: "#ffffff",
+primary: "#2779a7",
+secondary: "#ECD06F",
+highlight: "#FF9398",
+background: "#D3D0D0",
+
+h1 {
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+} 
+
+button {
+  @apply px-4 py-2 m-4 border rounded-lg text-2xl;
+}
+
+
+*/
+
+/* Add you css here */
+.cards-component {
+  @apply w-4/5;
+}
+
+.cards-component .heading {
+  @apply text-primary text-center mb-8;
+}
+.cards-wrapper {
+  @apply flex justify-center items-center gap-4 flex-wrap;
+}
+
+.horizontal-cards {
+  @apply flex flex-col gap-10;
+}
+.vertical-cards {
+  @apply flex  gap-4;
+}
+
+/* card 1 */
+.card1 {
+  @apply text-xl border-2 border-secondary bg-secondary rounded-xl text-light overflow-hidden shadow-lg hover:border-primary w-[420px] cursor-pointer;
+}
+
+.card1 .card-header {
+  @apply flex justify-between items-center px-4 py-2 font-bold bg-primary;
+}
+.card1 .card-header svg {
+  @apply text-light;
+}
+.card1 .card-header svg:hover {
+  @apply text-secondary;
+}
+.card1 .card-body {
+  @apply px-4 py-3 text-primary;
+}
+.card1 .card-footer {
+  @apply border-t border-t-primary text-primary flex justify-between items-center px-4 py-2;
+}
+.card1 .card-footer .icons {
+  @apply flex items-center gap-2;
+}
+
+/* card 2 */
+.card2 {
+  @apply text-xl border-2 border-transparent  bg-primary rounded-xl text-light overflow-hidden shadow-lg hover:border-highlight w-[280px] cursor-pointer;
+}
+
+.card2 .card-image img {
+  @apply rounded-t-xl border-b-0;
+}
+
+.card2 .card-header {
+  @apply flex justify-between items-center px-4 pt-2 font-bold;
+}
+
+.card2 .card-body {
+  @apply px-4 py-1  opacity-70;
+}
+.card2 .card-footer {
+  @apply flex items-center gap-2 px-4 py-2;
+}
+.card2 .card-footer img {
+  @apply rounded-full border-2 border-highlight;
+}
+.card2 .card-footer img:not(:nth-child(1)) {
+  @apply -ml-4;
+}
+
+/* card 3 */
+.card3 {
+  @apply text-xl border-2 border-transparent  bg-light rounded-xl text-light overflow-hidden shadow-lg hover:border-highlight w-[280px] cursor-pointer flex flex-col;
+}
+
+.card3 .card-header {
+  @apply flex justify-between items-center px-4 py-2 font-bold bg-primary;
+}
+.card3 .card-body {
+  @apply flex-1 bg-secondary flex flex-col justify-around gap-4 text-primary text-center  px-4 py-2;
+}
+
+.card3 .card-body .card-title {
+  @apply font-extrabold mt-4;
+}
+.card3 .card-body .card-desc {
+  @apply flex-grow;
+}
+.card3 .card-body .card-images {
+  @apply flex items-center justify-center gap-2 mb-4;
+}
+.card3 .card-body .card-images img {
+  @apply rounded-full border border-highlight;
+}
+.card3 .card-body .card-images img:not(:nth-child(1)) {
+  @apply -ml-6;
+}
+.card3 .card-footer {
+  @apply bg-primary text-center border-t border-t-primary;
+}
+
+.card3 .card-footer button {
+  @apply bg-secondary border border-highlight hover:bg-highlight text-light text-lg px-2 py-1 m-2;
+}
+
+/* card 4 */
+.card4 {
+  @apply text-xl rounded-xl text-primary overflow-hidden hover:shadow-lg  w-[420px]  cursor-pointer bg-[url('https://placehold.co/600x400/ECD06F/png?text=img')] bg-center bg-no-repeat;
+}
+
+.card4 .card-content {
+  @apply flex flex-col h-full gap-2 justify-center py-4 px-4;
+}
+.card4 .card-tag-line {
+  @apply text-sm;
+}
+
+.card4 .card-body {
+  @apply font-bold;
+}
+
+.card4 .card-action button {
+  @apply px-2 py-1 text-lg bg-primary border-highlight text-light m-0 hover:bg-highlight;
+}
