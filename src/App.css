@@ -1,5 +1,5 @@
 .app {
-  @apply h-screen bg-background flex flex-col justify-center items-center;
+  @apply h-screen  flex flex-col justify-center items-center bg-[url('/public/back1.png')];
 }
 
 .components-wrapper {
